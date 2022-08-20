@@ -238,6 +238,53 @@
 		</div>
 
 	</div>
+	 <!-- The Modal for Connexion-->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate card" action="/action_page.php">
+
+                <div class="imgcontainer">
+
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer"><i
+							class="fa-solid fa-x close"></i></span>
+                    <h5 class="card-title text-center pb-0 fs-4"> Bienvenue sur Whee!</h5>
+                </div>
+
+                <div class="container" style="align-items: start; margin-left:5px;">
+                    <label for="username" class="labelInput"><b>E-mail</b></label>
+                    <input type="text" placeholder="E-mail" name="uname" required style="margin-top:-5px;">
+
+                    <label for="psw" class="labelInput" id="labelPassword"><b>Mot de Passe</b></label>
+                    <input type="password" id="inputPassword" placeholder="Mot de passe" name="psw" required style="">
+                    <a id="lienMotDePasseOublie"> Mot de Passe Oublié? </a>
+                    <button type="submit" class="buttonConnexion" style="margin-top:15px;">Se Connecter</button>
+                    <button onclick="document.getElementById('id01').style.display='none'" class="connexionFB"><i
+							class="fa-brands fa-facebook" style="color:white"> </i> Continuer via Facebook</button>
+
+                    <button class="connexionGoogle"> <i class="fa-brands fa-google"></i> Continuer via Google</button>
+                    <label>
+
+						<!-- <input type="checkbox" checked="checked" name="remember"> Remember me -->
+						<div style="margin-top: 12px; text-align: center;">
+							<span class="" id="spanCondition"
+								style="-webkit-font-smoothing: antialiased; font-size: 11px; font-weight: normal; text-align: center; transition: opacity 0.2s linear 0s; color: rgb(118, 118, 118); width: 224px;"><span>En
+									continuant, vous acceptez les <a class="conditionTexte" href="#"
+										rel="noopener noreferrer" target="_blank">Conditions d'utilisation</a> de
+									Whee et reconnaissez avoir lu
+									nos <a class="Wk9 CCY czT eEj KhY xQ4 uCz" href="#" rel="noopener noreferrer"
+										target="_blank">Politiques de confidentialité</a>
+								</span></span>
+						</div>
+						<div class="hs0 mQ8 un8 C9i TB_"><button aria-label="" class="noButtonStyles active"
+								data-test-id="login-signup-toggle" type="button"
+								style="background: none; border: none; padding: 0px; text-align: left; display: block; color: rgb(51, 51, 51); margin-left: 5px; font-weight: bold;">Vous
+								n'êtes pas encore sur Whee!&nbsp;? Inscrivez-vous</button></div>
+				</div>
+			</form>
+		</div>
+		<!-- END OF INSCRIPTION MODAL -->
 
 	<!-- Search -->
 
