@@ -102,8 +102,6 @@ h5 {
     margin-top: 8px;
     vertical-align: middle;
     text-align: center;
-    color: rgb(255, 255, 255);
-    background: #fa9e1b;
     width: 100%;
 }
 
@@ -112,7 +110,13 @@ button:hover {
 }
 
 
-/* Extra styles for the cancel button */
+/* Extra styles for the other button */
+
+.buttonConnexion {
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    background: #fa9e1b;
+}
 
 .connexionFB {
     background: #1877f2;
