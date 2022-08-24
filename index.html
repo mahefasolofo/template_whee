@@ -26,32 +26,7 @@
 
 	<header class="header">
 
-		<!-- Top Bar -->
-
-		<div class="top_bar">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex flex-row">
-						<div class="phone">+261 32 77 747 69</div>
-						<div class="social">
-							<ul class="social_list">
-								<li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-						<div class="user_box ml-auto">
-						<div class="user_box_login user_box_link"><span onclick="document.getElementById('id01').style.display='block'" style="z-index: 99;">Se Connecter</span></div>
-							<div class="user_box_register user_box_link"><a href="#">s'inscrire</a></div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
-
+		
 		<!-- Main Navigation -->
 
 		<nav class="main_nav">
@@ -59,23 +34,27 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#">Whee!</a></div>
+							<div class="logo"><a href="#"><img src="images/logo_4.png" alt=""></a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="#">Accueil</a></li>
+								<li class="main_nav_item"><a href="index.html">Accueil</a></li>
 								<li class="main_nav_item"><a href="offers.html">Offres</a></li>
 								<li class="main_nav_item"><a href="demandes.html">Demandes</a></li>
 								<li class="main_nav_item"><a href="blog.html">évènements</a></li>
-								<li class="main_nav_item"><a href="about.html">à propos</a></li>
+								<li class="main_nav_item"><a href="about.html">à propos de nous</a></li>
 							</ul>
 						</div>
-						
-
+						<div class="user_box ml-auto">
+							<div class="user_box_login user_box_link"><span onclick="document.getElementById('id01').style.display='block'" style="z-index: 99;" class="user_box_link" id="right">Se Connecter</span></div>
+							<div class="user_box_register user_box_link"><a href="#">s'inscrire</a></div>
+						</div>
+	
+	
 						<form id="search_form" class="search_form bez_1">
 							<input type="search" class="search_content_input bez_1">
 						</form>
-
+	
 						<div class="hamburger">
 							<i class="fa fa-bars trans_200"></i>
 						</div>
@@ -86,10 +65,12 @@
 
 	</header>
 
+	
+
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#">Whee!</a></div>
+			<div class="logo menu_logo"><a href="#"><img src="images/logo_4.png" alt=""></a></div>
 			<ul>
 				<li class="menu_item"><a href="#">Accueil</a></li>
 				<li class="menu_item"><a href="offers.html">Offres</a></li>
@@ -119,8 +100,37 @@
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 							<h1></h1>
 							<h1>Offres!</h1>
-							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#home_slider_custom_dots">Découvrez maintenant<span></span><span></span><span></span></a></div>
+							<!-- <div class="button home_slider_button"><div class="button_bcg"></div><a href="#search_section">Découvrez maintenant<span></span><span></span><span></span></a></div> -->
 						</div>
+						
+					</div>
+					<div class="search_panel active col-lg-8">
+						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Départ -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf041; Départ" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Destination -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf041; Destination" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-calendar" aria-hidden="true"></i> Date / heure -->
+								<input type="datetime-local" class="check_out search_input" placeholder="Date | Heure">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-male" aria-hidden="true"></i> Personnes -->
+								<select name="adults" id="adults_1" class="dropdown_item_select search_input" placeholder="Personnes">
+									<option value="">Passagers</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+								</select>
+							</div>
+							
+							<button class="button search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
 					</div>
 				</div>
 
@@ -132,24 +142,75 @@
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 							<h1></h1>
 							<h1>Demandes!</h1>
-							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">Recherchez maintenant<span></span><span></span><span></span></a></div>
+							<!-- <div class="button home_slider_button"><div class="button_bcg"></div><a href="#">Recherchez maintenant<span></span><span></span><span></span></a></div> -->
 						</div>
+						
+					</div>
+					<div class="search_panel active col-lg-8">
+						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Départ -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf041; Départ" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Destination -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf041; Destination" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-calendar" aria-hidden="true"></i> Date / heure -->
+								<input type="datetime-local" class="check_out search_input" placeholder="Date | Heure">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-male" aria-hidden="true"></i> Personnes -->
+								<select name="adults" id="adults_1" class="dropdown_item_select search_input" placeholder="Personnes">
+									<option value="">Passagers</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+								</select>
+							</div>
+							
+							<button class="button search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
 					</div>
 				</div>
 
 				<!-- Slider Item -->
-				<div class="owl-item home_slider_item">
+				<div class="owl-item home_slider_item" >
 					<div class="home_slider_background" style="background-image:url(images/event3.jpg)"></div>
 
 					<div class="home_slider_content text-center">
 						<div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
 							<h1></h1>
 							<h1>Evènements!</h1>
-							<div class="button home_slider_button"><div class="button_bcg"></div><a href="#">Explorez maintenant<span></span><span></span><span></span></a></div>
+							<!-- <div class="button home_slider_button"><div class="button_bcg"></div><a href="#">Explorez maintenant<span></span><span></span><span></span></a></div> -->
 						</div>
 					</div>
+					<div class="search_panel active col-lg-8" >
+						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Départ -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf1fa; Evènement" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Destination -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf279; Lieu" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Destination -->
+								<input type="text" class="destination search_input" required="required" placeholder="&#xf192; Catégorie" style="font-family:Arial, FontAwesome">
+							</div>
+							<div class="search_item">
+								<!-- <i class="fa fa-calendar" aria-hidden="true"></i> Date / heure -->
+								<input type="datetime-local" class="check_out search_input" placeholder="Date | Heure">
+							</div>
+														
+							<button class="button search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
 				</div>
-
+				
 			</div>
 			
 			<!-- Home Slider Nav - Prev -->
@@ -158,8 +219,8 @@
 					width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
 					<defs>
 						<linearGradient id='home_grad_prev'>
-							<stop offset='0%' stop-color='#fa9e1b'/>
-							<stop offset='100%' stop-color='#8d4fff'/>
+							<stop offset='0%' stop-color='#D62828'/>
+							<stop offset='100%' stop-color='#D62828'/>
 						</linearGradient>
 					</defs>
 					<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -176,8 +237,8 @@
 				width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
 					<defs>
 						<linearGradient id='home_grad_next'>
-							<stop offset='0%' stop-color='#fa9e1b'/>
-							<stop offset='100%' stop-color='#8d4fff'/>
+							<stop offset='0%' stop-color='#D62828'/>
+							<stop offset='100%' stop-color='#D62828'/>
 						</linearGradient>
 					</defs>
 				<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
@@ -189,32 +250,16 @@
 			</div>
 
 			<!-- Home Slider Dots -->
-			<!-- <div class="search_tabs_container">
-				<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-					<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-					<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
-					<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
-					<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
-					<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
-					<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
-				</div>		
-			</div> -->
-			<div class="home_slider_dots row search_tabs_container">
+			
+			<!-- <div class="home_slider_dots row search_tabs_container">
 
 				<ul id="home_slider_custom_dots" class="home_slider_custom_dots col fill_height search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 					
 					<li class="home_slider_custom_dot active search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt=""><span>Offres</span></li>
 					<li class="home_slider_custom_dot search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt="">Demandes</li>
 					<li class="home_slider_custom_dot search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">Evènements</li>
-					
-					<!-- <div class="home_slider_custom_dot active search_tab  d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/stats_4.png" alt=""><span>Découvrir</span></div>
-					<div class="home_slider_custom_dot search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/car rentals" alt="">Covoiturage</div>
-					<div class="home_slider_custom_dot search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">Evènements</div> -->
 				</ul>
-
-				
-
-			</div>
+			</div> -->
 			
 		</div>
 
@@ -224,7 +269,7 @@
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 
             <!-- Modal Content -->
-            <form class="modal-content animate card" action="/action_page.php">
+            <form class="modal-content animate card" action="indexConnecte.html">
 
                 <div class="imgcontainer">
 
@@ -240,7 +285,7 @@
                     <label for="psw" class="labelInput" id="labelPassword"><b>Mot de Passe</b></label>
                     <input type="password" id="inputPassword" placeholder="Mot de passe" name="psw" required>
                     <a id="lienMotDePasseOublie"> Mot de Passe Oublié? </a>
-                    <button type="submit" class="buttonConnexion" style="margin-top:15px;">Se Connecter</button>
+                    <button type="submit" class="buttonConnexion" >Se Connecter</button>
                     <button onclick="document.getElementById('id01').style.display='none'" class="connexionFB"><i
 							class="fa-brands fa-facebook" style="color:white"> </i> Continuer via Facebook</button>
 
@@ -269,10 +314,9 @@
 
 	<!-- Search -->
 
-	<section class="search" id="search_section">
+	<!-- <section class="search" id="search_section">
 		
 
-		<!-- Search Contents -->
 		
 		<div class="container fill_height">
 			<div class="row fill_height">
@@ -280,37 +324,13 @@
 
 					
 
-					<!-- Search Panel -->
+				
 
 					<div class="search_panel active">
-						<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-							<div class="search_item">
-								<i class="fa fa-map-marker" aria-hidden="true"></i> Départ
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<i class="fa fa-map-marker" aria-hidden="true"></i> Destination
-								<input type="text" class="destination search_input" required="required">
-							</div>
-							<div class="search_item">
-								<i class="fa fa-calendar" aria-hidden="true"></i> Date / heure
-								<input type="datetime-local" class="check_out search_input" placeholder="YYYY-MM-DD">
-							</div>
-							<div class="search_item">
-								<i class="fa fa-male" aria-hidden="true"></i> Nombre de personnes
-								<select name="adults" id="adults_1" class="dropdown_item_select search_input">
-									<option>01</option>
-									<option>02</option>
-									<option>03</option>
-									<option>04</option>
-								</select>
-							</div>
-							
-							<button class="button search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-						</form>
+						
 					</div>
 
-					<!-- Search Panel -->
+					
 
 					<div class="search_panel">
 						<form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
@@ -341,7 +361,7 @@
 					</div>
 
 					<!-- Search Panel -->
-
+					<!--
 					<div class="search_panel">
 						<form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
 							<div class="search_item">
@@ -368,7 +388,7 @@
 				</div>
 			</div>
 		</div>		
-	</section>
+	</section> -->
 
 	<!-- Intro -->
 	

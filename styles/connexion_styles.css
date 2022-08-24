@@ -1,8 +1,16 @@
 /*Connexion modal */
-
+#right{
+    font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
 .user_box_link span {
     display: block;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 36px;
     font-weight: 600;
     color: #FFFFFF;
@@ -11,9 +19,11 @@
 
 .user_box_link span:hover {
     /* color: #fa9e1c; */
-    background: -webkit-linear-gradient(0.5turn, #fa9e1b, #8d4fff);
+    background: #003049;
+    z-index: 999;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: hand!important;
 }
 
 h5 {
@@ -52,8 +62,8 @@ h5 {
 
 /* Full-width input fields */
 
-input[type=text],
-input[type=password] {
+.modal input[type=text],
+.modal input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -84,7 +94,7 @@ input[type=password] {
 
 /* Set a style for all buttons */
 
-button {
+.modal button {
     padding: 14px 20px;
     margin: 8px 0;
     cursor: pointer;
@@ -103,16 +113,21 @@ button {
     vertical-align: middle;
     text-align: center;
     color: rgb(255, 255, 255);
-    background: #fa9e1b;
-    width: 100%;
 }
 
-button:hover {
+.modal button:hover {
     opacity: 0.8;
 }
 
 
+
 /* Extra styles for the cancel button */
+.buttonConnexion{
+    margin-top:15px;
+    background: #fa9e1b;
+    width: 100%;
+}
+
 
 .connexionFB {
     background: #1877f2;
