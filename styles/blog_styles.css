@@ -316,7 +316,7 @@ section
 }
 .header.scrolled
 {
-	background: rgba(0, 3, 5, 0.2);
+	background: rgba(0, 3, 5, 0.8);
 }
 
 /*********************************
@@ -1446,7 +1446,7 @@ section
 }
 
 /*********************************
-8. Footer
+13. Footer
 *********************************/
 
 .footer
@@ -1454,7 +1454,8 @@ section
 	width: 100%;
 	padding-top: 113px;
 	padding-bottom: 104px;
-	background: #31124b;
+	background: #000000d0;
+	
 }
 .footer_title
 {
@@ -1465,7 +1466,7 @@ section
 }
 
 /*********************************
-8.1 Footer - About
+13.1 Footer - About
 *********************************/
 
 .footer_about
@@ -1489,7 +1490,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #D62828;
 	border-radius: 50%;
 	text-align: center;
 	-webkit-transition: all 200ms ease;
@@ -1498,6 +1499,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 	margin-right: 9px;
+
 }
 .footer_social_item:last-child
 {
@@ -1530,15 +1532,15 @@ section
 }
 .footer_social_item:hover
 {
-	background: #fa9e1b;
+	background: #D62828;
 }
 .footer_social_item:hover a i
 {
-	color: #31124b;
+	color: #f3f6f9;
 }
 
 /*********************************
-8.2 Footer - Blog
+13.2 Footer - Blog
 *********************************/
 
 .footer_blog
@@ -1580,18 +1582,18 @@ section
 }
 .footer_blog_title a:hover
 {
-	color: #fa9e1b;
+	color: #D62828;
 }
 .footer_blog_date
 {
 	font-size: 12px;
 	font-weight: 400;
-	color: #fa9e1b;
+	color: #D62828;
 	margin-top: 7px;
 }
 
 /*********************************
-8.3 Footer - Tags
+13.3 Footer - Tags
 *********************************/
 
 .footer_tags
@@ -1604,7 +1606,7 @@ section
 	float: left;
 	margin-right: 9px;
 	margin-bottom: 9px;
-	border: solid 1px #fa9e1b;
+	border: solid 1px #D62828;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1613,7 +1615,7 @@ section
 }
 .tag_item:hover
 {
-	background: #fa9e1b;
+	background: #D62828;
 }
 .tag_item a
 {
@@ -1627,7 +1629,7 @@ section
 }
 
 /*********************************
-8.4 Footer - Contact Info
+13.4 Footer - Contact Info
 *********************************/
 
 .contact_info_list
@@ -1640,9 +1642,11 @@ section
 }
 .contact_info_icon
 {
-	width: 20px;
+	width: 50px;
 	height: 20px;
 	margin-right: 10px;
+	font-size: 30px;
+	color:#f3f6f9;
 }
 .contact_info_icon img
 {
@@ -1659,58 +1663,5 @@ section
 .contact_info_item:hover .contact_info_text,
 .contact_info_item:hover .contact_info_text a
 {
-	color: #fa9e1b;
-}
-
-/*********************************
-9. Copyright
-*********************************/
-
-.copyright
-{
-	background: #1f0733;
-}
-.copyright_content
-{
-	height: 52px;
-}
-.copyright_content div
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: #685677;
-}
-.footer_nav_container
-{
-	height: 52px;
-}
-.footer_nav
-{
-	
-}
-.footer_nav_list
-{
-	font-size: 0px;
-}
-.footer_nav_item
-{
-	display: inline-block;
-	margin-right: 40px;
-}
-.footer_nav_item a
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: #685677;
-	text-transform: uppercase;
-	line-height: 2;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_nav_item a:hover
-{
-	color: #FFFFFF;
+	color: #D62828;
 }

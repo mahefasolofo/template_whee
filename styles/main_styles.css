@@ -318,7 +318,7 @@ section
 }
 .header.scrolled
 {
-	background: rgba(0, 3, 5, 0.64);
+	background: rgba(0, 3, 5, 0.8);
 }
 
 /*********************************
@@ -2108,6 +2108,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 	margin-right: 9px;
+
 }
 .footer_social_item:last-child
 {
@@ -2144,7 +2145,7 @@ section
 }
 .footer_social_item:hover a i
 {
-	color: #31124b;
+	color: #f3f6f9;
 }
 
 /*********************************
@@ -2250,9 +2251,11 @@ section
 }
 .contact_info_icon
 {
-	width: 20px;
+	width: 50px;
 	height: 20px;
 	margin-right: 10px;
+	font-size: 30px;
+	color:#f3f6f9;
 }
 .contact_info_icon img
 {
@@ -2270,57 +2273,4 @@ section
 .contact_info_item:hover .contact_info_text a
 {
 	color: #D62828;
-}
-
-/*********************************
-14. Copyright
-*********************************/
-
-.copyright
-{
-	background: #1f0733;
-}
-.copyright_content
-{
-	height: 52px;
-}
-.copyright_content div
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: #685677;
-}
-.footer_nav_container
-{
-	height: 52px;
-}
-.footer_nav
-{
-	
-}
-.footer_nav_list
-{
-	font-size: 0px;
-}
-.footer_nav_item
-{
-	display: inline-block;
-	margin-right: 40px;
-}
-.footer_nav_item a
-{
-	font-size: 12px;
-	font-weight: 600;
-	color: #685677;
-	text-transform: uppercase;
-	line-height: 2;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_nav_item a:hover
-{
-	color: #FFFFFF;
 }

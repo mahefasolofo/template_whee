@@ -18,12 +18,13 @@
 }
 
 .user_box_link span:hover {
-    /* color: #fa9e1c; */
-    background: #003049;
+    background: #D62828;
+    font-weight: 900;
     z-index: 999;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: hand!important;
+    
 }
 
 h5 {
