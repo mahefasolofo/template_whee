@@ -112,11 +112,11 @@ h5 {
     margin-top: 8px;
     vertical-align: middle;
     text-align: center;
-<<<<<<< HEAD
+
     color: rgb(255, 255, 255);
-=======
+
     width: 100%;
->>>>>>> 160ea5f56d82c81672405e1350bdf5688e5c6174
+
 }
 
 .modal button:hover {
@@ -124,7 +124,7 @@ h5 {
 }
 
 
-<<<<<<< HEAD
+
 
 /* Extra styles for the cancel button */
 .buttonConnexion{
@@ -133,7 +133,7 @@ h5 {
     width: 100%;
 }
 
-=======
+
 /* Extra styles for the other button */
 
 .buttonConnexion {
@@ -141,7 +141,7 @@ h5 {
     color: rgb(255, 255, 255);
     background: #fa9e1b;
 }
->>>>>>> 160ea5f56d82c81672405e1350bdf5688e5c6174
+
 
 .connexionFB {
     background: #1877f2;

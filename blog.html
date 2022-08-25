@@ -11,6 +11,8 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
+<!-- Ajouté par joel (style pour l'inscription) -->
+<link rel="stylesheet" href="styles/connexion_styles.css">
 </head>
 
 <body>
@@ -20,41 +22,12 @@
 	<!-- Header -->
 
 	<header class="header">
-
-		<!-- Top Bar -->
-
-		<div class="top_bar">
-			<div class="container">
-				<div class="row">
-					<div class="col d-flex flex-row">
-						<div class="phone">+261 32 77 747 69</div>
-						<div class="social">
-							<ul class="social_list">
-								<li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-						<div class="user_box ml-auto">
-							<div class="user_box_login user_box_link"><a href="indexConnecte.html">se connecter</a></div>
-							<div class="user_box_register user_box_link"><a href="#">s'inscrire</a></div>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
-
-		<!-- Main Navigation -->
-
 		<nav class="main_nav">
 			<div class="container">
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#">Whee!</a></div>
+							<div class="logo"><a href="#"><img src="images/logo_4.png" alt=""></a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
@@ -65,12 +38,16 @@
 								<li class="main_nav_item"><a href="about.html">à propos de nous</a></li>
 							</ul>
 						</div>
-						
-
+						<div class="user_box ml-auto">
+							<div class="user_box_login user_box_link"><span onclick="document.getElementById('id01').style.display='block'" style="z-index: 99;" class="user_box_link" id="right">Se Connecter</span></div>
+							<div class="user_box_register user_box_link"><a href="#">s'inscrire</a></div>
+						</div>
+	
+	
 						<form id="search_form" class="search_form bez_1">
 							<input type="search" class="search_content_input bez_1">
 						</form>
-
+	
 						<div class="hamburger">
 							<i class="fa fa-bars trans_200"></i>
 						</div>
@@ -78,7 +55,6 @@
 				</div>
 			</div>	
 		</nav>
-
 	</header>
 
 	<div class="menu trans_500">
@@ -102,6 +78,29 @@
 		<div class="home_content">
 			<div class="home_title">Les évènements</div>
 		</div>
+		<div class="search_panel active col-lg-8">
+			<form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
+				<div class="search_item">
+					<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Départ -->
+					<input type="text" class="destination search_input" required="required" placeholder="&#xf1fa; Evènement" style="font-family:Arial, FontAwesome">
+				</div>
+				<div class="search_item">
+					<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Destination -->
+					<input type="text" class="destination search_input" required="required" placeholder="&#xf279; Lieu" style="font-family:Arial, FontAwesome">
+				</div>
+				<div class="search_item">
+					<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Destination -->
+					<input type="text" class="destination search_input" required="required" placeholder="&#xf192; Catégorie" style="font-family:Arial, FontAwesome">
+				</div>
+				<div class="search_item">
+					<!-- <i class="fa fa-calendar" aria-hidden="true"></i> Date / heure -->
+					<input type="datetime-local" class="check_out search_input" placeholder="Date | Heure">
+				</div>
+											
+				<button class="button search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</form>
+		</div>
+
 	</div>
 
 	<!-- Blog -->

@@ -310,17 +310,16 @@ section
 /*********************************
 3. Header
 *********************************/
-
 .header
 {
 	position: fixed;
 	width: 100%;
-	background: rgba(54, 19, 84, 0.6);
+	background: rgba(0, 0, 0, 0.2);
 	z-index: 12;
 }
 .header.scrolled
 {
-	background: rgba(54, 19, 84, 0.85);
+	background: rgba(0, 3, 5, 0.2);
 }
 
 /*********************************
@@ -391,29 +390,35 @@ section
 {
 	color: #FFFFFF;
 }
+.user_box{
+	margin-left: -300px;
+	
+}
 .user_box_link
 {
 	display: inline-block;
+	font-size: 12px;
+	
 }
 .user_box_link img{
-	width: 35px;
+	width: 50px;
 	border-radius: 50%;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 .user_box_link a
 {
 	display: inline-block;
-	font-size: 12px;
 	line-height: 36px;
 	font-weight: 600;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	
 }
 .user_box_link a:hover
 {
-	/* color: #fa9e1c; */
-	background: -webkit-linear-gradient(0.5turn,#fa9e1b, #8d4fff);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
+	color: #D62828;
+	
 }
 .user_box_link i{
 	font-size : 20px;
@@ -426,19 +431,20 @@ section
 {
 	display: block;
 	position: absolute;
-	top: 15px;
+	top: 23px;
 	right: -9px;
 	background: #FFFFFF;
 	width: 1px;
-	height: 9px;
+	height: 12px;
 	content: '';
 }
 #user_name{
 	padding-left: 25px;
 }
+
 .main_nav_col
 {
-	height: 80px;
+	height: 60px;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -447,7 +453,7 @@ section
 }
 .header.scrolled .main_nav_col
 {
-	height: 100px;
+	height: 50px;
 }
 
 /*********************************
@@ -477,26 +483,25 @@ section
 	font-family: 'Beyond';
 	font-size: 50px;
 	font-weight: 800;
-	background: -webkit-linear-gradient(1turn,#fa9e1b, #8d4fff);
+	background: #fff;
+	
+	/* background: -webkit-linear-gradient(1turn,#D62828, #003049); */
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-
 	/* text-transform: uppercase; */
 }
-.logo a img
+.logo img
 {
-	/* display: inline-block;
+	display: inline-block;
 	vertical-align: baseline;
 	margin-right: 9px;
 	-webkit-transform: translateY(2px);
 	-moz-transform: translateY(2px);
 	-ms-transform: translateY(2px);
 	-o-transform: translateY(2px);
-	transform: translateY(10px);
+	transform: translateY(2px);
+	width: 130px;
 
-	/***Modif Mahefa***/
-	
-	/*******/
 }
 
 /*********************************
@@ -507,6 +512,16 @@ section
 {
 	margin-right: 221px;
 }
+
+.main_nav_list{
+	width: auto;
+	padding-left: 50px;
+}
+.main_nav_list .right{
+	
+	margin-left: 15vw;
+}
+
 .main_nav_item
 {
 	position: relative;
@@ -520,7 +535,7 @@ section
 .main_nav_item a
 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 600;
 	color: #FFFFFF;
 	text-transform: uppercase;
@@ -535,7 +550,7 @@ section
 	bottom: -11px;
 	width: calc(75% + 2px);
 	height: 2px;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right, #D62828, #003049);
 	content: '';
 	opacity: 0;
 	-webkit-transition: all 200ms ease;
@@ -580,7 +595,7 @@ section
 }
 .content_search:hover .mag_glass
 {
-	fill: #fa9e1c;
+	fill: #D62828;
 }
 .search_form
 {
@@ -594,7 +609,7 @@ section
 }
 .search_form.active
 {
-	top: 105px;
+	top: 100px;
 	visibility: visible;
 	opacity: 1;
 }
@@ -648,14 +663,14 @@ section
 }
 .hamburger:hover i
 {
-	color: #fa9e1c;
+	color: #D62828;
 }
 .menu
 {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #fa9e1b, #8d4fff);
+	background: linear-gradient(to right,#003049, #D62828);
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
@@ -766,6 +781,10 @@ section
 {
 	background: #fa9e1c;
 }
+.user_info{
+	font-size: 8px;
+}
+
 /*********************************
 4. Home
 *********************************/
@@ -800,10 +819,15 @@ section
 }
 .home_title
 {
+	font-family: 'Beyond';
 	font-size: 72px;
-	font-weight: 800;
+	font-weight: 500;
 	color: #FFFFFF;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
+	white-space: nowrap;
+	top: 0vh;
+	text-shadow: 5px 2px 5px #2a2a2a;
+	
 }
 
 /*********************************
