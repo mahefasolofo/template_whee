@@ -314,6 +314,331 @@
 			</form>
 		</div>
 		<!-- END OF INSCRIPTION MODAL -->
+		<div class="modal" id="id02">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
+					<form data-multi-step class="multi-step-form">
+						<div class="card cardInscription" data-step>
+							<span onclick="document.getElementById('id02').style.display='none'" class="close"
+								title="Fermer"><i class="fa-solid fa-x closeInscription"></i></span>
+							<div class="imgcontainer">
+								<div style="text-align:center; margin-top:15px;">
+									<span class="dot" style="background-color:black;"></span>
+									<span class="dot"></span>
+									<span class="dot"></span>
+									<span class="dot"></span>
+								</div>
+
+
+								<h5 class="cardInscription-title text-center pb-0 fs-4" style="margin-top:30px;">
+									Inscription
+								</h5>
+							</div>
+
+							<div class="container" style="align-items: start; margin-left:5px;">
+								<label for="username" class="form-label"><b>Nom d'utilisateur</b></label>
+								<input type="text" placeholder="Nom d'Utilisateur" name="uname" required>
+
+								<label for="psw" class="form-label"><b>Email</b></label>
+								<input type="text" placeholder="E-mail" name="psw" required
+									style=" margin-bottom:15px;">
+
+								<label for="age" class="form-label"><b>Mot de Passe</b></label>
+								<input type="password" placeholder="Mot de passe" name="psw" required
+									style=" margin-bottom:15px;">
+
+
+								<button type="button" class="buttonInscription" data-next>Suivant</button>
+
+
+
+								<!-- <input type="checkbox" checked="checked" name="remember"> Remember me -->
+								<div style="margin-top: 12px; align-items:center;  ">
+									<span class="" id="spanCondition"><span>
+											<input type="checkbox" name="condition" id="checkboxCondition" required>
+											En continuant, vous acceptez les <a class="conditionTexte" href="#"
+												rel="noopener noreferrer" target="_blank">Conditions
+												d'utilisation</a> de
+											Whee et reconnaissez avoir lu
+											nos <a class="Wk9 CCY czT eEj KhY xQ4 uCz" href="#"
+												rel="noopener noreferrer" target="_blank">Politiques de
+												confidentialité</a>
+										</span>
+
+
+									</span>
+									<div style="margin-top: 12px; align-items:center; text-align: center;">
+										<button aria-label="" class=" active" data-test-id="login-signup-toggle"
+											type="button"
+											style="background: none;align-items: center; border: none; color: rgb(51, 51, 51); margin-left: 5px; font-weight: bold;">Vous
+											êtes déjà sur Whee!&nbsp;? Connectez-vous</button></div>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- //Genre -->
+						<div class="card cardInscription" data-step>
+							<i class="fa-solid fa-arrow-left previous" style="font-size:25px;"
+								data-previous></i></button>
+							<div style="text-align:center; margin-top:15px;">
+								<span class="dot"></span>
+								<span class="dot" style="background-color:black;"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+							<h5 class="cardInscription-title text-center pb-0 fs-4" style="margin-top:30px;">
+								Vous êtes identifié en tant que:
+							</h5>
+							<!-- <div class="form-group"> -->
+
+							<table>
+								<tr>
+									<td> <label for="homme" class="sexeLabel">Homme</label></td>
+									<td><input type="radio" id="autres" name="fav_language" value="HTML">
+									</td>
+								</tr>
+								<tr>
+									<td> <label for="html" class="sexeLabel">Femme</label></td>
+									<td><input type="radio" id="autres" name="fav_language" value="HTML">
+									</td>
+								</tr>
+
+								<tr>
+									<td> <label for="html" class="sexeLabel">Autres</label></td>
+									<td> <label for="html"><input type="radio" id="autres" name="fav_language"
+												value="HTML">
+									</td>
+								</tr>
+
+
+								</tr>
+							</table>
+
+
+							<button type="button" class="buttonInscription" data-next>Suivant</button>
+						</div>
+						<div class="card cardInscription" style="align-items:center" data-step>
+							<i class="fa-solid fa-arrow-left previous" style="font-size:25px;" data-previous></i>
+							<div style="text-align:center; margin-top:15px;">
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot" style="background-color:black;"></span>
+								<span class="dot"></span>
+							</div>
+							<h3 class="step-title">Avant-dernière étape </h3>
+							<div class="container" style="align-items: start; margin-left:5px;">
+								<label for="username" class="form-label"><b>Nom d'utilisateur</b></label>
+								<input type="text" placeholder="Nom d'utilisateur" name="uname" required>
+
+								<label for="psw" class="form-label"><b>
+										Date de naissance</b></label>
+								<input type="number" placeholder="Age" name="psw" required style=" margin-bottom:15px;">
+								<label for="psw" class="form-label"><b>
+										Adresse</b></label>
+								<input type="text" placeholder="Adresse" name="adresse" required
+									style=" margin-bottom:15px;">
+								<button type="button" class="buttonInscription" data-next>Suivant</button>
+							</div>
+
+						</div>
+
+						<div class="card cardInscriptionCentreInteret cardInscription" data-step>
+							<i class="fa-solid fa-arrow-left previous" style="font-size:25px;" data-previous></i>
+							<div style="text-align:center; margin-top:15px;">
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot" style="background-color:black;"></span>
+							</div>
+							<h3 class="step-title">Dernière étape ! Dites-nous ce qui vous intéresse </h3>
+							<div class="rowCentreInteret row" style="width:100%">
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_1.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Politique</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_2.jpg'); ">
+
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Tennis</label>
+										</div>
+									</label>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_3.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Voitures</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('centreInteret/basketball.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">BasketBall</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_5.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Pétanque</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_1.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Pop</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_1.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Rock</label>
+										</div>
+
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_1.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Voyages</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_2.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Opéra</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_3.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Photographie</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_4.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Voyage</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_5.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Beaux-arts</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_1.jpg'); ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">Voyage</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_1.jpg'); background-color:black;">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret"> Coiffures homme</label>
+										</div>
+								</div>
+								<div class="col-2 divCentreInteret"
+									style="background-image: url('images/gallery_4.jpg') ">
+									<label class="option_item">
+										<div class="round">
+											<!-- <input type="checkbox" checked id="checkbox" class="checkbox-rounded" /> -->
+											<label for="checkbox"></label>
+										</div>
+										<div class="overlay-image">
+											<label for="" class="labelCentreInteret">FootBall</label>
+										</div>
+
+								</div>
+							</div>
+							<button type="submit" class="buttonInscription">S'INSCRIRE</button>
+						</div>
+
+
+
+
+					</form>
+				</div>
+			</div>
+
+
+		</div>
 
 	<!-- Trajets populaires -->
 	<div class="intro">
