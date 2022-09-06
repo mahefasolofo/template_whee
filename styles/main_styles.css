@@ -392,6 +392,7 @@ section
 .user_box{
 	width: 50vw;
 	margin-left: 0px;
+	min-width: 200px;
 	
 }
 .user_box_link
@@ -513,16 +514,16 @@ section
 
 .main_nav_container
 {
-	margin-right: 100px;
+	margin-right: 50px;
 }
 
 .main_nav_list{
-	width: 40vw;
+	width: 55vw;
 	padding-left: 50px;
 }
 .main_nav_list .right{
-	
-	margin-left: 15vw;
+	min-width: 200px!important;
+	/* margin-left: 15vw; */
 }
 
 .main_nav_item
@@ -1235,7 +1236,7 @@ section
 }
 
 /*bar de recherche responsive*/
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
 .search_panel {
 	visibility : hidden;
 	display: flex;
@@ -1250,7 +1251,7 @@ section
 }
 	
 	
-}
+} */
 
 /*********************************
 6. Section Title
